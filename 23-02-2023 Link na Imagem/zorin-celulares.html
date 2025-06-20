@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .fundo {
+            background-color: rgb(173, 173, 173);
+            min-height: 240px; /* Altura mínima, permite expansão */
+            margin-bottom: 10px;
+            padding: 10px; /* Espaçamento interno */
+            box-sizing: border-box; /* Inclui padding na largura */
+        }
+        .text {
+            margin: 10px;
+            font-size: 16px; /* Tamanho base legível */
+        }
+        .titulo {
+            color: #830000;
+            display: flex;
+            align-items: center;
+            font-size: 24px; /* Tamanho ajustado */
+        }
+        .atencao {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        video {
+            max-width: 100%; /* Vídeo não ultrapassa a tela */
+            height: auto; /* Mantém proporção */
+            display: block; /* Remove espaços indesejados */
+            margin: 0 auto; /* Centraliza */
+        }
+        /* Media query para telas menores */
+        @media (max-width: 600px) {
+            .titulo {
+                font-size: 18px; /* Reduz o título */
+                flex-direction: column; /* Empilha imagem e texto */
+                align-items: flex-start;
+            }
+            .atencao {
+                height: 30px; /* Reduz a imagem de aviso */
+                margin-bottom: 5px;
+            }
+            .text {
+                font-size: 14px; /* Texto menor, mas legível */
+            }
+            .fundo {
+                padding: 5px; /* Menos padding em telas pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo">
+        <div class="text">
+            <h1 class="titulo">
+                <img class="atencao" src="Imagem/Warning.svg.png" alt="Símbolo de aviso"> 
+                SE VOCÊ AVISTOU ESSE SER... <strong>PEÇA AJUDA IMEDIATAMENTE</strong>
+            </h1>
+            <p><strong>SCPs diarios capturados por Heleno HelleH- dia 2</strong> <br>
+                scp-4392: ZorinCelulares <br>
+                classe: vendedor<br>
+                <br>
+                Tem a aparência similar a de um pinguim... <br>
+                Eles aparecem se você estiver assistindo The Yapori Show, mas não se sabe quando e como se manifestam. <br>
+                A habilidade deles é desconhecida, mas pode ser letal. Não se sabe o porquê,<br>
+                mas para se defender eles começam a gritar "É A SUA LOJA PREFERIDA" repetidas vezes... <br>
+            </p>
+        </div>
+    </div>
+
+    <video controls="controls">
+        <source src="video/Zorin-Celulares.mp4" type="video/mp4">   
+    </video>
+</body>
+</html>
